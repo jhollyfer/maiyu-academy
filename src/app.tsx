@@ -24,7 +24,7 @@ import {
 export function App() {
   return (
     <main className="h-screen w-screen flex flex-col">
-      <header className="h-[9.5rem] w-full bg-blue-600 flex justify-center">
+      <header className="h-[9.5rem] w-full bg-[#003399] flex justify-center">
         <nav className="container w-full flex justify-between items-center p-3 sm:p-0">
           <img
             src="/logo-light.png"
@@ -78,7 +78,7 @@ export function App() {
         </nav>
       </header>
 
-      <section className="bg-blue-600 w-full flex justify-center py-6 sm:py-20">
+      <section className="bg-[#003399] w-full flex justify-center py-6 sm:py-20">
         <div className="container w-full flex sm:space-x-10 flex-col sm:flex-row px-4 space-y-4 sm:space-y-0">
           <ul className="text-[#fffafa] space-x-2 sm:space-x-0 sm:space-y-2 py-2 sm:py-10 flex flex-row sm:flex-col">
             {[
