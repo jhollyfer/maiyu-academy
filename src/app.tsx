@@ -28,7 +28,7 @@ import {
 export function App() {
   return (
     <main className="h-screen w-screen flex flex-col overflow-x-hidden">
-      <section className="bg-[url('/hero/banner.png')] bg-no-repeat bg-cover h-auto lg:h-screen w-full shadow-[inset_50px_40px_80px_180px_rgba(0,0,0,0.8)] bg-top sm:bg-center">
+      <section className="bg-[url('/hero/banner.webp')] bg-no-repeat bg-cover h-auto lg:h-screen w-full shadow-[inset_50px_40px_80px_180px_rgba(0,0,0,0.8)] bg-top sm:bg-center">
         <header className="h-[9.5rem] w-full flex justify-center">
           <nav className="container w-full flex justify-between items-center p-3 sm:p-0">
             <img
@@ -113,7 +113,7 @@ export function App() {
             </ul>
             <div className="text-[#fffafa] sm:max-w-3xl w-full flex-1 sm:pr-36 space-y-3">
               <h1 className="font-extrabold text-3xl sm:text-5xl">
-                Educação tecnologia de qualidade, para um{" "}
+                Educação tecnológica de qualidade, para um{" "}
                 <span className="text-[#3366FF]">futuro inovador</span>
               </h1>
               <p className="text-2xl">
