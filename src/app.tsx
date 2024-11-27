@@ -27,7 +27,7 @@ import {
 
 export function App() {
   return (
-    <main className="h-screen w-screen flex flex-col">
+    <main className="h-screen w-screen flex flex-col overflow-x-hidden">
       <section className="bg-[url('/hero/banner.png')] bg-no-repeat bg-cover h-auto lg:h-screen w-full shadow-[inset_50px_40px_80px_180px_rgba(0,0,0,0.8)] bg-top sm:bg-center">
         <header className="h-[9.5rem] w-full flex justify-center">
           <nav className="container w-full flex justify-between items-center p-3 sm:p-0">
