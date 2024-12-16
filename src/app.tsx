@@ -24,6 +24,9 @@ import {
   SheetHeader,
   SheetTrigger,
 } from "./components/ui/sheet";
+import { OurCourses } from "./components/our-courses";
+import { Methodology } from "./components/methodology";
+import { Choose } from "./components/choose";
 
 export function App() {
   return (
@@ -209,6 +212,11 @@ export function App() {
             ))}
           </div>
         </section>
+      </section>
+      <section className="w-full flex flex-col justify-center items-center space-y-10">
+        <OurCourses />
+        <Methodology />
+        <Choose />
       </section>
     </main>
   );
