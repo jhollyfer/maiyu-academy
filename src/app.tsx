@@ -27,6 +27,8 @@ import {
 import { OurCourses } from "./components/our-courses";
 import { Methodology } from "./components/methodology";
 import { Choose } from "./components/choose";
+import { AboutUs } from "./components/about-us";
+import { UseCases } from "./components/use-cases";
 
 export function App() {
   return (
@@ -217,6 +219,10 @@ export function App() {
         <OurCourses />
         <Methodology />
         <Choose />
+        <div className="w-full">
+          <AboutUs />
+          <UseCases />
+        </div>
       </section>
     </main>
   );
