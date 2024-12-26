@@ -24,14 +24,28 @@
 
     <title>Jedais Tec</title>
   </head>
-  <body>
+  <body class="relative">
+    <section
+      id="loading"
+      class="w-full flex flex-col gap-10 justify-center items-center p-8 bg-[#003399] fixed top-0 left-0 right-0 h-screen z-50"
+    >
+      <img src="/logo-light.png" alt="Logo Jedais Tec" class="w-44 h-14" />
+      <div class="container w-full flex flex-col space-y-10 max-w-sm">
+        <div
+          id="bar-progress"
+          class="bg-white/80 h-1.5 rounded-full"
+          style="width: 0%"
+        ></div>
+      </div>
+    </section>
+
     <main
       id="home"
       class="pt-[9.5rem] bg-[url('/hero/banner.png')] bg-no-repeat bg-cover h-auto xl:h-screen w-full shadow-[inset_50px_40px_80px_180px_rgba(0,0,0,0.8)] bg-top sm:bg-center relative"
     >
       <header
         id="header"
-        class="h-[9.5rem] w-full flex justify-center fixed top-0 left-0 z-50 transition-all duration-300 ease-in-out"
+        class="h-[9.5rem] w-full flex justify-center fixed top-0 left-0 z-40 transition-all duration-300 ease-in-out"
       >
         <nav
           class="container w-full flex justify-between items-center px-8 sm:p-0"
