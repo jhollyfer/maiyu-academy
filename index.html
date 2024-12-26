@@ -1,0 +1,1065 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <title>Jedais Tec</title>
+  </head>
+  <body>
+    <main
+      id="home"
+      class="bg-[url('/hero/banner.png')] bg-no-repeat bg-cover h-auto xl:h-screen w-full shadow-[inset_50px_40px_80px_180px_rgba(0,0,0,0.8)] bg-top sm:bg-center"
+    >
+      <header class="h-[9.5rem] w-full flex justify-center">
+        <nav
+          class="container w-full flex justify-between items-center px-8 sm:p-0"
+        >
+          <img src="/logo-light.png" alt="Logo Jedais Tec" class="w-44 h-14" />
+
+          <!-- drawer init and toggle -->
+          <div class="text-center">
+            <button
+              class="text-white font-medium rounded-lg text-sm px-5 py-2.5 mb-2 focus:outline-none hover:bg-blue-600/10"
+              type="button"
+              data-drawer-target="drawer-right"
+              data-drawer-show="drawer-right"
+              data-drawer-placement="right"
+              aria-controls="drawer-right"
+            >
+              <i data-lucide="Align-Right" class="w-8 h-8"></i>
+            </button>
+          </div>
+
+          <!-- drawer component -->
+          <div
+            id="drawer-right"
+            class="fixed top-0 right-0 z-40 h-screen p-10 overflow-y-auto transition-transform translate-x-full bg-white w-full sm:w-96"
+            tabindex="-1"
+            aria-labelledby="drawer-right-label"
+          >
+            <div class="inline-flex items-center w-full justify-between">
+              <img
+                src="/logo-dark.png"
+                alt="Logo Jedais Tec"
+                class="w-44 h-14"
+              />
+              <button
+                type="button"
+                data-drawer-hide="drawer-right"
+                aria-controls="drawer-right"
+                class="text-red-500 bg-transparent hover:bg-blue-600/10 rounded-lg text-sm p-1.5 inline-flex items-center"
+              >
+                <i data-lucide="X" class="w-8 h-8"></i>
+                <span class="sr-only">Close menu</span>
+              </button>
+            </div>
+
+            <div class="flex flex-col">
+              <ul class="flex flex-col gap-2">
+                <li>
+                  <a
+                    href="#home"
+                    data-drawer-hide="drawer-right"
+                    aria-controls="drawer-right"
+                    >Inicio</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#courses"
+                    data-drawer-hide="drawer-right"
+                    aria-controls="drawer-right"
+                    >Cursos</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#methodology"
+                    data-drawer-hide="drawer-right"
+                    aria-controls="drawer-right"
+                    >Metologia</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#about"
+                    data-drawer-hide="drawer-right"
+                    aria-controls="drawer-right"
+                    >Sobre</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#use-cases"
+                    data-drawer-hide="drawer-right"
+                    aria-controls="drawer-right"
+                    >Casos de uso</a
+                  >
+                </li>
+                <!-- <li><a href="#partners">Parceiros</a></li> -->
+                <li>
+                  <a
+                    href="#contact"
+                    data-drawer-hide="drawer-right"
+                    aria-controls="drawer-right"
+                    >Contato</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <section
+        class="w-full flex flex-col justify-center items-center space-y-10 p-8"
+      >
+        <div class="container w-full flex flex-col space-y-4">
+          <ul class="text-[#fffafa] space-x-2 py-2 flex flex-row">
+            <li>
+              <button class="text-black p-2 bg-white rounded-md">
+                <i data-lucide="Facebook" class="w-5 h-5"></i>
+              </button>
+            </li>
+            <li>
+              <button class="text-black p-2 bg-white rounded-md">
+                <i data-lucide="Instagram" class="w-5 h-5"></i>
+              </button>
+            </li>
+            <li>
+              <button class="text-black p-2 bg-white rounded-md">
+                <i data-lucide="Youtube" class="w-5 h-5"></i>
+              </button>
+            </li>
+          </ul>
+          <div class="text-[#fffafa] md:max-w-3xl w-full flex-1 space-y-3">
+            <h1 class="font-extrabold text-3xl md:text-5xl">
+              Educação tecnológica de qualidade, para um
+              <span class="text-[#3366FF]">futuro inovador</span>
+            </h1>
+            <p class="text-2xl">
+              Uma nova maneira de aprender! Cursos especializados e divertidos.
+              Inscreva-se e transforme seu conhecimento!
+            </p>
+            <div class="inline-flex space-x-4">
+              <a
+                href="https://form.jotform.com/aguilajoao/jedaismatriculas2025"
+                target="_blank"
+              >
+                <button
+                  class="bg-[#3366FF] hover:bg-[#3366FF]/90 text-base p-4 rounded-lg font-semibold"
+                >
+                  Matricula-se agora
+                </button>
+              </a>
+              <button
+                class="bg-[#33CC00] hover:bg-[#33CC00]/90 p-4 rounded-lg text-base font-semibold"
+              >
+                Fale conosco
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="container grid grid-cols-1 xl:grid-cols-3 gap-4">
+          <div
+            class="bg-black/80 border-[#fffafa]/20 p-6 rounded-lg shadow w-full space-y-4"
+          >
+            <i data-lucide="Gamepad-2" class="w-10 h-10 text-red-600"></i>
+            <div class="w-full space-y-3">
+              <h5 class="text-2xl font-bold tracking-tight text-[#fffafa]">
+                Programação e Jogos
+              </h5>
+              <p class="font-normal text-[#fffafa] text-justify">
+                Descubra o mundo fascinante do desenvolvimento de jogos com
+                nossos cursos especializados. Transforme a sua paixão por jogos
+                em uma carreira promissora.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="bg-black/80 border-[#fffafa]/20 p-6 rounded-lg shadow w-full space-y-4"
+          >
+            <i data-lucide="Waypoints" class="w-10 h-10 text-blue-600"></i>
+            <div class="w-full space-y-3">
+              <h5 class="text-2xl font-bold tracking-tight text-[#fffafa]">
+                Raciocínio Lógico
+              </h5>
+              <p class="font-normal text-[#fffafa] text-justify">
+                Domine a lógica de programação e abra portas para uma carreira
+                em tecnologia. Aprenda a pensar e resolva problemas com desafios
+                reais.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="bg-black/80 border-[#fffafa]/20 p-6 rounded-lg shadow w-full space-y-4"
+          >
+            <i data-lucide="Brain" class="w-10 h-10 text-green-600"></i>
+            <div class="w-full space-y-3">
+              <h5 class="text-2xl font-bold tracking-tight text-[#fffafa]">
+                Tecnologia e IA
+              </h5>
+              <p class="font-normal text-[#fffafa] text-justify">
+                Explore o futuro da tecnologia, aprenda a construir sistemas
+                inteligentes, domine algoritmos de IA e aplique seu conhecimento
+                em projetos reais.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <section
+      id="courses"
+      class="w-full inline-flex justify-center items-center p-8"
+    >
+      <div class="container w-full flex flex-col space-y-10">
+        <div class="flex flex-col space-y-2">
+          <h2 class="text-2xl font-extrabold text-[#003399]">Nossos Cursos</h2>
+          <p class="font-medium text-[#003399]">
+            Alavanque o seu aprendizado com os melhores conteúdos
+          </p>
+        </div>
+
+        <div
+          id="default-carousel"
+          class="relative w-full flex flex-col gap-5"
+          data-carousel="static"
+        >
+          <!-- Carousel wrapper -->
+          <div class="relative h-[45rem] lg:h-80 overflow-hidden rounded-lg">
+            <!-- Item 1 -->
+            <div
+              class="hidden duration-700 ease-in-out grid lg:grid-cols-2 gap-4"
+              data-carousel-item
+            >
+              <div class="bg-[#F0F0F0] p-6 rounded-lg shadow w-full space-y-4">
+                <div class="flex flex-col gap-4">
+                  <h5 class="text-2xl font-bold tracking-tight">
+                    Informática básica
+                  </h5>
+                  <div class="grid grid-cols-3 gap-4">
+                    <div class="flex flex-col gap-2">
+                      <span>Idade</span>
+                      <span
+                        class="bg-[#3366FF]/10 text-xs font-medium p-2 rounded"
+                        >6 a 10 anos</span
+                      >
+                    </div>
+                    <div class="flex flex-col gap-2">
+                      <span>Nível</span>
+                      <span
+                        class="bg-[#3366FF]/10 text-xs font-medium p-2 rounded"
+                        >Básico</span
+                      >
+                    </div>
+                    <div class="flex flex-col gap-2">
+                      <span>Duração</span>
+                      <span
+                        class="bg-[#3366FF]/10 text-xs font-medium p-2 rounded"
+                        >4 meses</span
+                      >
+                    </div>
+                  </div>
+                  <p class="font-normal text-justify">
+                    Domine o essencial da informática com nosso curso: sistemas
+                    operacionais, softwares de escritório e navegação segura na
+                    internet. Abra portas para novas oportunidades de emprego e
+                    conecte-se ao…
+                  </p>
+
+                  <a
+                    href="https://form.jotform.com/aguilajoao/jedaismatriculas2025"
+                    target="_blank"
+                  >
+                    <button
+                      type="button"
+                      class="bg-[#3366FF] hover:bg-[#3366FF]/90 text-base p-2 rounded-lg font-semibold text-white"
+                    >
+                      Saiba mais
+                    </button>
+                  </a>
+                </div>
+              </div>
+
+              <div class="bg-[#F0F0F0] p-6 rounded-lg shadow w-full space-y-4">
+                <div class="flex flex-col gap-4">
+                  <h5 class="text-2xl font-bold tracking-tight">
+                    Informática intermediária
+                  </h5>
+                  <div class="grid grid-cols-3 gap-4">
+                    <div class="flex flex-col gap-2">
+                      <span>Idade</span>
+                      <span
+                        class="bg-[#3366FF]/10 text-xs font-medium p-2 rounded"
+                        >13 a 16 anos</span
+                      >
+                    </div>
+                    <div class="flex flex-col gap-2">
+                      <span>Nível</span>
+                      <span
+                        class="bg-[#3366FF]/10 text-xs font-medium p-2 rounded"
+                        >intermediária</span
+                      >
+                    </div>
+                    <div class="flex flex-col gap-2">
+                      <span>Duração</span>
+                      <span
+                        class="bg-[#3366FF]/10 text-xs font-medium p-2 rounded"
+                        >4 meses</span
+                      >
+                    </div>
+                  </div>
+                  <p class="font-normal text-justify">
+                    Domine o essencial da informática com nosso curso: sistemas
+                    operacionais, softwares de escritório e navegação segura na
+                    internet. Abra portas para novas oportunidades de emprego e
+                    conecte-se ao…
+                  </p>
+
+                  <a
+                    href="https://form.jotform.com/aguilajoao/jedaismatriculas2025"
+                    target="_blank"
+                  >
+                    <button
+                      type="button"
+                      class="bg-[#3366FF] hover:bg-[#3366FF]/90 text-base p-2 rounded-lg font-semibold text-white"
+                    >
+                      Saiba mais
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 2 -->
+            <div
+              class="hidden duration-700 ease-in-out grid grid-cols-1 lg:grid-cols-2 gap-4"
+              data-carousel-item
+            >
+              <div class="bg-[#F0F0F0] p-6 rounded-lg shadow w-full space-y-4">
+                <div class="flex flex-col gap-4">
+                  <h5 class="text-2xl font-bold tracking-tight">
+                    Informática avançada
+                  </h5>
+                  <div class="grid grid-cols-3 gap-4">
+                    <div class="flex flex-col gap-2">
+                      <span>Idade</span>
+                      <span
+                        class="bg-[#3366FF]/10 text-xs font-medium p-2 rounded"
+                        >11 a 16 anos</span
+                      >
+                    </div>
+                    <div class="flex flex-col gap-2">
+                      <span>Nível</span>
+                      <span
+                        class="bg-[#3366FF]/10 text-xs font-medium p-2 rounded"
+                        >Avançada</span
+                      >
+                    </div>
+                    <div class="flex flex-col gap-2">
+                      <span>Duração</span>
+                      <span
+                        class="bg-[#3366FF]/10 text-xs font-medium p-2 rounded"
+                        >4 meses</span
+                      >
+                    </div>
+                  </div>
+                  <p class="font-normal text-justify">
+                    Domine o essencial da informática com nosso curso: sistemas
+                    operacionais, softwares de escritório e navegação segura na
+                    internet. Abra portas para novas oportunidades de emprego e
+                    conecte-se ao…
+                  </p>
+
+                  <a
+                    href="https://form.jotform.com/aguilajoao/jedaismatriculas2025"
+                    target="_blank"
+                  >
+                    <button
+                      type="button"
+                      class="bg-[#3366FF] hover:bg-[#3366FF]/90 text-base p-2 rounded-lg font-semibold text-white"
+                    >
+                      Saiba mais
+                    </button>
+                  </a>
+                </div>
+              </div>
+
+              <div class="bg-[#F0F0F0] p-6 rounded-lg shadow w-full space-y-4">
+                <div class="flex flex-col gap-4">
+                  <h5 class="text-2xl font-bold tracking-tight">
+                    Jogos com Scratch
+                  </h5>
+                  <div class="grid grid-cols-3 gap-4">
+                    <div class="flex flex-col gap-2">
+                      <span>Idade</span>
+                      <span
+                        class="bg-[#3366FF]/10 text-xs font-medium p-2 rounded"
+                        >11 a 16 anos</span
+                      >
+                    </div>
+                    <div class="flex flex-col gap-2">
+                      <span>Nível</span>
+                      <span
+                        class="bg-[#3366FF]/10 text-xs font-medium p-2 rounded"
+                        >Avançada</span
+                      >
+                    </div>
+                    <div class="flex flex-col gap-2">
+                      <span>Duração</span>
+                      <span
+                        class="bg-[#3366FF]/10 text-xs font-medium p-2 rounded"
+                        >4 meses</span
+                      >
+                    </div>
+                  </div>
+                  <p class="font-normal text-justify">
+                    Domine o essencial da informática com nosso curso: sistemas
+                    operacionais, softwares de escritório e navegação segura na
+                    internet. Abra portas para novas oportunidades de emprego e
+                    conecte-se ao…
+                  </p>
+
+                  <a
+                    href="https://form.jotform.com/aguilajoao/jedaismatriculas2025"
+                    target="_blank"
+                  >
+                    <button
+                      type="button"
+                      class="bg-[#3366FF] hover:bg-[#3366FF]/90 text-base p-2 rounded-lg font-semibold text-white"
+                    >
+                      Saiba mais
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 3 -->
+            <div
+              class="hidden duration-700 ease-in-out grid grid-cols-1 lg:grid-cols-2 gap-4"
+              data-carousel-item
+            >
+              <div class="bg-[#F0F0F0] p-6 rounded-lg shadow w-full space-y-4">
+                <div class="flex flex-col gap-4">
+                  <h5 class="text-2xl font-bold tracking-tight">
+                    Programação Web
+                  </h5>
+                  <div class="grid grid-cols-3 gap-4">
+                    <div class="flex flex-col gap-2">
+                      <span>Idade</span>
+                      <span
+                        class="bg-[#3366FF]/10 text-xs font-medium p-2 rounded"
+                        >11 a 16 anos</span
+                      >
+                    </div>
+                    <div class="flex flex-col gap-2">
+                      <span>Nível</span>
+                      <span
+                        class="bg-[#3366FF]/10 text-xs font-medium p-2 rounded"
+                        >Avançada</span
+                      >
+                    </div>
+                    <div class="flex flex-col gap-2">
+                      <span>Duração</span>
+                      <span
+                        class="bg-[#3366FF]/10 text-xs font-medium p-2 rounded"
+                        >4 meses</span
+                      >
+                    </div>
+                  </div>
+                  <p class="font-normal text-justify">
+                    Domine o essencial da informática com nosso curso: sistemas
+                    operacionais, softwares de escritório e navegação segura na
+                    internet. Abra portas para novas oportunidades de emprego e
+                    conecte-se ao…
+                  </p>
+
+                  <a
+                    href="https://form.jotform.com/aguilajoao/jedaismatriculas2025"
+                    target="_blank"
+                  >
+                    <button
+                      type="button"
+                      class="bg-[#3366FF] hover:bg-[#3366FF]/90 text-base p-2 rounded-lg font-semibold text-white"
+                    >
+                      Saiba mais
+                    </button>
+                  </a>
+                </div>
+              </div>
+
+              <div class="bg-[#F0F0F0] p-6 rounded-lg shadow w-full space-y-4">
+                <div class="flex flex-col gap-4">
+                  <h5 class="text-2xl font-bold tracking-tight">Canvas</h5>
+                  <div class="grid grid-cols-3 gap-4">
+                    <div class="flex flex-col gap-2">
+                      <span>Idade</span>
+                      <span
+                        class="bg-[#3366FF]/10 text-xs font-medium p-2 rounded"
+                        >11 a 16 anos</span
+                      >
+                    </div>
+                    <div class="flex flex-col gap-2">
+                      <span>Nível</span>
+                      <span
+                        class="bg-[#3366FF]/10 text-xs font-medium p-2 rounded"
+                        >Avançada</span
+                      >
+                    </div>
+                    <div class="flex flex-col gap-2">
+                      <span>Duração</span>
+                      <span
+                        class="bg-[#3366FF]/10 text-xs font-medium p-2 rounded"
+                        >4 meses</span
+                      >
+                    </div>
+                  </div>
+                  <p class="font-normal text-justify">
+                    Domine o essencial da informática com nosso curso: sistemas
+                    operacionais, softwares de escritório e navegação segura na
+                    internet. Abra portas para novas oportunidades de emprego e
+                    conecte-se ao…
+                  </p>
+
+                  <a
+                    href="https://form.jotform.com/aguilajoao/jedaismatriculas2025"
+                    target="_blank"
+                  >
+                    <button
+                      type="button"
+                      class="bg-[#3366FF] hover:bg-[#3366FF]/90 text-base p-2 rounded-lg font-semibold text-white"
+                    >
+                      Saiba mais
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="inline-flex w-full justify-between">
+            <!-- Slider indicators -->
+            <div class="">
+              <button
+                type="button"
+                class="w-3 h-3 rounded-full"
+                aria-current="true"
+                aria-label="Slide 1"
+                data-carousel-slide-to="0"
+              ></button>
+              <button
+                type="button"
+                class="w-3 h-3 rounded-full"
+                aria-current="false"
+                aria-label="Slide 2"
+                data-carousel-slide-to="1"
+              ></button>
+
+              <button
+                type="button"
+                class="w-3 h-3 rounded-full"
+                aria-current="false"
+                aria-label="Slide 3"
+                data-carousel-slide-to="2"
+              ></button>
+            </div>
+            <!-- Slider controls -->
+            <div>
+              <button type="button" class="" data-carousel-prev>
+                <span
+                  class="inline-flex items-center justify-center w-6 h-6 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+                >
+                  <i data-lucide="Arrow-Left" class="w-4 h-4"></i>
+                  <span class="sr-only">Previous</span>
+                </span>
+              </button>
+              <button type="button" class="" data-carousel-next>
+                <span
+                  class="inline-flex items-center justify-center w-6 h-6 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+                >
+                  <i data-lucide="Arrow-Right" class="w-4 h-4"></i>
+                  <span class="sr-only">Next</span>
+                </span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="methodology"
+      class="w-full inline-flex justify-center items-center p-8"
+    >
+      <div class="container w-full flex flex-col space-y-10">
+        <div class="flex flex-col space-y-2">
+          <h2 class="text-2xl font-extrabold text-[#003399]">Metodologia</h2>
+          <p class="font-medium text-[#003399]">
+            Aprendizado otimizado com a metodologia jedais
+          </p>
+        </div>
+        <div class="grid grid-cols-1 xl:grid-cols-3 gap-4">
+          <div
+            class="bg-[#F0F0F0] p-6 rounded-lg shadow w-full space-y-4 h-full"
+          >
+            <div>
+              <span
+                class="bg-[#003399] text-white text-xl font-medium px-3 py-2 rounded-full"
+                >1</span
+              >
+            </div>
+            <div class="w-full flex flex-col gap-4">
+              <h5 class="text-2xl font-bold tracking-tight text-[#1E1E1E]">
+                Informática básica
+              </h5>
+              <p class="font-normal text-[#1E1E1E] text-justify">
+                Nosso curso de informática básica para iniciantes foi criado
+                para quem quer aprender a usar o computador e a internet de
+                maneira prática e descomplicada. Com ele, você vai entender os
+                fundamentos essenciais que fazem a diferença no dia a dia.
+              </p>
+            </div>
+            <div class="flex flex-col">
+              <span class="font-semibold opacity-50">Tempo</span>
+              <h6 class="font-semibold text-xl">5 meses</h6>
+              <span>Fevereiro a Junho</span>
+            </div>
+          </div>
+
+          <div
+            class="bg-[#F0F0F0] p-6 rounded-lg shadow w-full space-y-4 h-full"
+          >
+            <div>
+              <span
+                class="bg-[#3366FF] text-white text-xl font-medium px-3 py-2 rounded-full"
+                >2</span
+              >
+            </div>
+            <div class="w-full flex flex-col gap-4">
+              <h5 class="text-2xl font-bold tracking-tight text-[#1E1E1E]">
+                Informática intermediário + Lógica computacional + manutenção de
+                computadores
+              </h5>
+              <p class="font-normal text-[#1E1E1E] text-justify">
+                Quer avançar no conhecimento em informática e dominar as bases
+                da computação? Nosso curso oferece uma formação completa para
+                quem deseja ir além dos conceitos básicos e conquistar
+                habilidades práticas e avançadas!
+              </p>
+            </div>
+            <div class="flex flex-col">
+              <span class="font-semibold opacity-50">Tempo</span>
+              <h6 class="font-semibold text-xl">5 meses</h6>
+              <span>Junho a Novembro</span>
+            </div>
+          </div>
+
+          <div
+            class="bg-[#F0F0F0] p-6 rounded-lg shadow w-full space-y-4 h-full"
+          >
+            <div>
+              <span
+                class="bg-[#33CC00] text-white text-xl font-medium px-3 py-2 rounded-full"
+                >3</span
+              >
+            </div>
+            <div class="w-full flex flex-col gap-4">
+              <h5 class="text-2xl font-bold tracking-tight text-[#1E1E1E]">
+                Informática avançada + IA + Design + programação
+              </h5>
+              <p class="font-normal text-[#1E1E1E] text-justify">
+                Quer dominar o universo da tecnologia e se tornar um
+                profissional multifuncional e preparado para o futuro?
+                Apresentamos o curso definitivo para quem deseja ir além.
+              </p>
+            </div>
+            <div class="flex flex-col">
+              <span class="font-semibold opacity-50">Tempo</span>
+              <h6 class="font-semibold text-xl">10 meses</h6>
+              <span>Fevereiro a Novembro</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="choose"
+      class="w-full inline-flex justify-center items-center p-8"
+    >
+      <div class="container w-full flex flex-col space-y-10">
+        <div class="flex flex-col space-y-2">
+          <h2 class="text-2xl font-extrabold text-[#003399]">
+            Porque escolher a gente?
+          </h2>
+          <p class="font-medium text-[#003399]">
+            Conhecimento acessível, garantido e divertido para você evoluir
+            sempre!
+          </p>
+        </div>
+
+        <div class="flex w-full space-y-12 flex-col">
+          <div class="relative w-full flex flex-col space-y-4">
+            <div class="max-w-[50%] max-lg:max-w-full space-y-4">
+              <h2 class="text-4xl font-bold text-[#003399]">Custo Acessível</h2>
+              <p class="text-justify">
+                Oferecemos conhecimento de alta qualidade por um preço que cabe
+                no seu bolso. Sabemos que educação é um investimento e, por
+                isso, trabalhamos para que você tenha acesso ao melhor conteúdo
+                sem comprometer suas finanças. Nosso objetivo é democratizar o
+                aprendizado para que todos possam crescer e se destacar no
+                mercado.
+              </p>
+            </div>
+
+            <div class="max-lg:hidden">
+              <div
+                class="absolute top-14 right-10 w-1/3 border-t-4 border-blue-600"
+              ></div>
+              <div
+                class="absolute right-[45px] h-32 w-1 bg-blue-600 top-[-66px] translate-y-[100%]"
+              ></div>
+              <div
+                class="absolute top-[51px] right-10 w-4 h-4 bg-green-500 rounded-full"
+              ></div>
+            </div>
+          </div>
+
+          <div class="relative w-full flex flex-col space-y-4 pb-10">
+            <div
+              class="max-w-[50%] max-lg:max-w-full space-y-4 ml-auto lg:text-end"
+            >
+              <h2 class="text-4xl font-bold text-[#003399]">
+                Garantia de Aprendizado
+              </h2>
+              <p class="text-justify">
+                Aqui, você realmente aprende! Nossa metodologia é testada e
+                aprovada, com um suporte contínuo para ajudar a fixar os
+                conhecimentos. Com aulas dinâmicas, materiais complementares e
+                exercícios práticos, garantimos que você saia do curso com a
+                confiança e as habilidades necessárias para aplicar o que
+                aprendeu.
+              </p>
+            </div>
+
+            <div class="max-lg:hidden">
+              <div
+                class="absolute top-28 left-10 w-1/3 border-t-4 border-blue-600"
+              ></div>
+              <div
+                class="absolute left-10 h-28 w-1 bg-blue-600 top-0 translate-y-[100%]"
+              ></div>
+              <div
+                class="absolute top-[105px] left-9 w-4 h-4 bg-green-500 rounded-full"
+              ></div>
+            </div>
+          </div>
+
+          <div class="relative w-full flex flex-col space-y-4 pb-2">
+            <div class="max-w-[50%] max-lg:max-w-full space-y-4">
+              <h2 class="text-4xl font-bold text-[#003399]">
+                Plataforma Gamificada
+              </h2>
+              <p class="text-justify">
+                Aprender nunca foi tão divertido! Nossa plataforma é gamificada
+                para tornar o processo de aprendizado mais envolvente e
+                interativo. Você ganha pontos, desbloqueia níveis e participa de
+                desafios que incentivam seu progresso e tornam o conteúdo ainda
+                mais interessante. Aprenda jogando e divirta-se enquanto adquire
+                novos conhecimentos!
+              </p>
+            </div>
+
+            <div class="max-lg:hidden">
+              <div
+                class="absolute top-28 right-10 w-1/3 border-t-4 border-blue-600"
+              ></div>
+              <div
+                class="absolute right-[45px] h-20 w-1 bg-blue-600 top-8 translate-y-[100%]"
+              ></div>
+              <div
+                class="absolute top-[105px] right-10 w-4 h-4 bg-green-500 rounded-full"
+              ></div>
+            </div>
+          </div>
+
+          <div class="w-full flex flex-col space-y-4 pb-10">
+            <div
+              class="max-w-[50%] max-lg:max-w-full space-y-4 ml-auto lg:text-end"
+            >
+              <h2 class="text-4xl font-bold text-[#003399]">
+                Continuidade no Aprendizado
+              </h2>
+              <p class="text-justify">
+                Acreditamos que o aprendizado não termina ao fim de um curso.
+                Por isso, oferecemos materiais extras, atualizações e acesso
+                contínuo à nossa plataforma para que você possa se aprimorar e
+                acompanhar as novidades do mercado. Com a gente, você está
+                sempre um passo à frente, construindo um futuro melhor.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="about"
+      class="w-full inline-flex justify-center items-center p-8 bg-[#003399] text-white"
+    >
+      <div class="container w-full flex flex-col space-y-10">
+        <div class="flex flex-col space-y-2">
+          <h2 class="text-2xl font-extrabold">Sobre nós</h2>
+          <p class="font-medium text-white">
+            Conheça um pouco sobre nossa escola
+          </p>
+        </div>
+
+        <div class="flex flex-col-reverse xl:flex-row gap-10">
+          <div class="space-y-10 w-full">
+            <p class="text-justify">
+              A Startup Jedais Tec é uma empresa dedicada à educação
+              tecnológica, focada especialmente no desenvolvimento de crianças e
+              jovens do interior do Amazonas. Nosso objetivo é formar mentes
+              curiosas, preparando-as para um futuro dominado por avanços
+              digitais. O diferencial da escola, está na sua abordagem
+              educacional única, combinando ensino de tecnologia com
+              metodologias ativas de aprendizagem.
+            </p>
+
+            <h3 class="font-bold text-3xl">Fundadores</h3>
+
+            <figure class="flex gap-6 items-center max-md:flex-col w-full">
+              <img loading="lazy" src="/joao.png" class="size-64" />
+              <figcaption class="space-y-4 w-full">
+                <h4 class="font-bold text-lg">João Aguila - CEO & Fundador</h4>
+                <p class="text-justify">
+                  Diretor Fundador de 31 anos, bacharel em Administração
+                  pela UFAM e Técnico em Redes de Computadores e Manutenção e
+                  suporte pelo CETAM. Conhecido pela sua paixão pela tecnologia
+                  e pelo seu desejo de democratizar o ensino de informática. Sua
+                  visão para a Jedais Tec é iluminar o caminho para um futuro
+                  brilhante para as crianças através da educação digital
+                </p>
+              </figcaption>
+            </figure>
+
+            <figure class="flex gap-6 items-center max-md:flex-col">
+              <img loading="lazy" src="/jhollyfer.png" class="size-64" />
+              <figcaption class="space-y-4 w-full">
+                <h4 class="font-bold text-lg">
+                  Jhollyfer Rodrigues - CTO & Eng. Software
+                </h4>
+                <p class="text-justify">
+                  Bacharel em Engenharia de Software pela UFAM com experiência
+                  no desenvolvimento de aplicações web escaláveis e funcionais.
+                  Especialista em tecnologia e inovação.
+                </p>
+              </figcaption>
+            </figure>
+          </div>
+
+          <div class="w-full flex flex-col justify-between gap-10">
+            <div
+              class="bg-white/10 p-6 rounded-lg shadow w-full space-y-4 h-full"
+            >
+              <i data-lucide="Crosshair" class="w-10 h-10 text-red-600"></i>
+              <div class="w-full space-y-3">
+                <h5 class="text-2xl font-bold tracking-tight text-[#fffafa]">
+                  Missão
+                </h5>
+                <p class="font-normal text-[#fffafa] text-justify">
+                  A missão da Jedais Tec é capacitar crianças e jovens dos
+                  interiores do Amazonas, para o futuro da tecnologia,
+                  dando-lhes as habilidades que precisam para explorar e criar
+                  no mundo digital.
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="bg-white/10 p-6 rounded-lg shadow w-full space-y-4 h-full"
+            >
+              <i data-lucide="Eye" class="w-10 h-10 text-green-600"></i>
+              <div class="w-full space-y-3">
+                <h5 class="text-2xl font-bold tracking-tight text-[#fffafa]">
+                  Visão
+                </h5>
+                <p class="font-normal text-[#fffafa] text-justify">
+                  Ser líder em educação tecnológica para crianças e jovens,
+                  transformando-se no farol que ilumina o caminho para
+                  descobertas, inovações e a busca pela excelência.
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="bg-white/10 p-6 rounded-lg shadow w-full space-y-4 h-full"
+            >
+              <i data-lucide="Gem" class="w-10 h-10 text-blue-600"></i>
+              <div class="w-full space-y-3">
+                <h5 class="text-2xl font-bold tracking-tight text-[#fffafa]">
+                  Valores
+                </h5>
+                <p class="font-normal text-[#fffafa] text-justify">
+                  Responsabilidade, Integridade, Foco no sucesso do Aluno,
+                  Trabalho em Equipe, Inclusão Digital e Inovação no Ensino.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="patners"
+      class="w-full inline-flex justify-center items-center p-8 text-[#003399]"
+    >
+      <div class="container w-full flex flex-col space-y-10">
+        <div class="flex flex-col space-y-2">
+          <h2 class="text-2xl font-extrabold">
+            Empresas que já contam com a gente
+          </h2>
+        </div>
+        <div
+          class="grid grid-cols-1 lg:grid-cols-3 gap-10 items-center justify-center"
+        >
+          <img loading="lazy" src="/indiodev.png" class="mx-auto" />
+          <img loading="lazy" src="/cetam.png" class="mx-auto" />
+          <img loading="lazy" src="/sebrae.png" class="mx-auto" />
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="contact"
+      class="w-full inline-flex justify-center items-center p-8 text-[#003399]"
+    >
+      <div class="container w-full flex flex-col space-y-10">
+        <div class="flex flex-col space-y-2">
+          <h2 class="text-2xl font-extrabold">Contato</h2>
+          <p class="font-medium">
+            Entre em contato conosco para mais informações
+          </p>
+        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+          <form class="w-full">
+            <div class="mb-5">
+              <label for="name" class="block mb-2 text-sm font-medium"
+                >Nome completo</label
+              >
+              <input
+                type="text"
+                id="name"
+                class="border text-sm rounded-lg block w-full p-2.5 bg-[#003399]/10 border-[#003399]"
+                placeholder="Joe Doe"
+                required
+              />
+            </div>
+
+            <div class="mb-5">
+              <label for="email" class="block mb-2 text-sm font-medium"
+                >E-mail</label
+              >
+              <input
+                type="email"
+                id="email"
+                class="border text-sm rounded-lg block w-full p-2.5 bg-[#003399]/10 border-[#003399]"
+                placeholder="joe.doe@example.com"
+                required
+              />
+            </div>
+
+            <div class="mb-5">
+              <label for="subject" class="block mb-2 text-sm font-medium"
+                >Assunto</label
+              >
+              <input
+                type="text"
+                id="subject"
+                class="border text-sm rounded-lg block w-full p-2.5 bg-[#003399]/10 border-[#003399]"
+                placeholder="Contato"
+                required
+              />
+            </div>
+
+            <div class="mb-5">
+              <label for="message" class="block mb-2 text-sm font-medium"
+                >Mensagem</label
+              >
+              <textarea
+                id="message"
+                rows="10"
+                class="bg-[#003399]/10 border-[#003399] block p-2.5 w-full text-sm rounded-lg"
+                placeholder="Escreva aqui..."
+              ></textarea>
+            </div>
+
+            <button
+              type="submit"
+              class="text-white bg-[#003399] hover:bg-[#003399]/80 font-medium rounded-lg text-sm w-full px-5 py-2.5 text-center"
+            >
+              Enviar
+            </button>
+          </form>
+
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7956.3262761540855!2d-70.03296676662025!3d-4.380527231362102!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91f2eb0050c52f47%3A0x16139ff381c644b3!2sEscola%20Jedais%20Tec!5e0!3m2!1spt-BR!2sbr!4v1735190072474!5m2!1spt-BR!2sbr"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            class="w-full h-full"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <footer
+      class="bg-[#1E1E1E] w-full inline-flex justify-center items-center p-8"
+    >
+      <div class="container w-full text-white flex flex-col gap-10">
+        <div class="flex flex-row w-full justify-between">
+          <img src="/logo-light.png" alt="Logo Jedais Tec" class="w-44 h-14" />
+
+          <div class="flex flex-col">
+            <ul class="flex flex-col gap-2">
+              <li><a href="#home">Inicio</a></li>
+              <li><a href="#courses">Cursos</a></li>
+              <li><a href="#methodology">Metologia</a></li>
+              <li><a href="#about">Sobre</a></li>
+              <li><a href="#use-cases">Casos de uso</a></li>
+              <!-- <li><a href="#partners">Parceiros</a></li> -->
+              <li><a href="#contact">Contato</a></li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <p>Todos os direitos reservados © JADAIS TEC</p>
+          <span class="opacity-30">
+            Desenvolvido por
+            <a href="https://indio.dev.br" target="_blank">
+              <strong>Maiyu Development</strong>
+            </a>
+          </span>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="/assests/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+  </body>
+</html>
