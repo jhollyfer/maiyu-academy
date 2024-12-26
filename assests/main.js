@@ -6,10 +6,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const changeBackground = function () {
     const bounds = home.getBoundingClientRect();
+    console.log(bounds);
 
-    if (!(bounds.top <= 0 && bounds.bottom > 0))
-      header.classList.add("bg-[#1E1E1E]");
-    else header.classList.remove("bg-[#1E1E1E]");
+    if (bounds.top <= -10) header.classList.add("bg-[#003399]");
+    else header.classList.remove("bg-[#003399]");
   };
 
   window.addEventListener("scroll", changeBackground);
