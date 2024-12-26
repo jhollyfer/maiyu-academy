@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/png" href="/favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.cdnfonts.com/css/amazon-ember" rel="stylesheet" />
+
     <link
       href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css"
       rel="stylesheet"
@@ -11,14 +13,26 @@
 
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
+
+    <style type="text/tailwindcss">
+      @layer base {
+        body {
+          font-family: "Amazon Ember ", sans-serif;
+        }
+      }
+    </style>
+
     <title>Jedais Tec</title>
   </head>
   <body>
     <main
       id="home"
-      class="bg-[url('/hero/banner.png')] bg-no-repeat bg-cover h-auto xl:h-screen w-full shadow-[inset_50px_40px_80px_180px_rgba(0,0,0,0.8)] bg-top sm:bg-center"
+      class="pt-[9.5rem] bg-[url('/hero/banner.png')] bg-no-repeat bg-cover h-auto xl:h-screen w-full shadow-[inset_50px_40px_80px_180px_rgba(0,0,0,0.8)] bg-top sm:bg-center relative"
     >
-      <header class="h-[9.5rem] w-full flex justify-center">
+      <header
+        id="header"
+        class="h-[9.5rem] w-full flex justify-center fixed top-0 left-0 z-50 transition-all duration-300 ease-in-out"
+      >
         <nav
           class="container w-full flex justify-between items-center px-8 sm:p-0"
         >
@@ -41,7 +55,7 @@
           <!-- drawer component -->
           <div
             id="drawer-right"
-            class="fixed top-0 right-0 z-40 h-screen p-10 overflow-y-auto transition-transform translate-x-full bg-white w-full sm:w-96"
+            class="fixed top-0 right-0 z-40 h-screen p-10 overflow-y-auto transition-transform translate-x-full bg-white w-full sm:w-96 space-y-8"
             tabindex="-1"
             aria-labelledby="drawer-right-label"
           >
@@ -63,12 +77,13 @@
             </div>
 
             <div class="flex flex-col">
-              <ul class="flex flex-col gap-2">
+              <ul class="flex flex-col gap-6">
                 <li>
                   <a
                     href="#home"
                     data-drawer-hide="drawer-right"
                     aria-controls="drawer-right"
+                    class="text-2xl font-semibold"
                     >Inicio</a
                   >
                 </li>
@@ -77,6 +92,7 @@
                     href="#courses"
                     data-drawer-hide="drawer-right"
                     aria-controls="drawer-right"
+                    class="text-2xl font-semibold"
                     >Cursos</a
                   >
                 </li>
@@ -85,6 +101,7 @@
                     href="#methodology"
                     data-drawer-hide="drawer-right"
                     aria-controls="drawer-right"
+                    class="text-2xl font-semibold"
                     >Metologia</a
                   >
                 </li>
@@ -93,6 +110,7 @@
                     href="#about"
                     data-drawer-hide="drawer-right"
                     aria-controls="drawer-right"
+                    class="text-2xl font-semibold"
                     >Sobre</a
                   >
                 </li>
@@ -101,6 +119,7 @@
                     href="#use-cases"
                     data-drawer-hide="drawer-right"
                     aria-controls="drawer-right"
+                    class="text-2xl font-semibold"
                     >Casos de uso</a
                   >
                 </li>
@@ -110,6 +129,7 @@
                     href="#contact"
                     data-drawer-hide="drawer-right"
                     aria-controls="drawer-right"
+                    class="text-2xl font-semibold"
                     >Contato</a
                   >
                 </li>
@@ -226,7 +246,7 @@
     >
       <div class="container w-full flex flex-col space-y-10">
         <div class="flex flex-col space-y-2">
-          <h2 class="text-2xl font-extrabold text-[#003399]">Nossos Cursos</h2>
+          <h2 class="text-3xl font-extrabold text-[#003399]">Nossos Cursos</h2>
           <p class="font-medium text-[#003399]">
             Alavanque o seu aprendizado com os melhores conteúdos
           </p>
@@ -605,7 +625,7 @@
     >
       <div class="container w-full flex flex-col space-y-10">
         <div class="flex flex-col space-y-2">
-          <h2 class="text-2xl font-extrabold text-[#003399]">Metodologia</h2>
+          <h2 class="text-3xl font-extrabold text-[#003399]">Metodologia</h2>
           <p class="font-medium text-[#003399]">
             Aprendizado otimizado com a metodologia jedais
           </p>
@@ -701,7 +721,7 @@
     >
       <div class="container w-full flex flex-col space-y-10">
         <div class="flex flex-col space-y-2">
-          <h2 class="text-2xl font-extrabold text-[#003399]">
+          <h2 class="text-3xl font-extrabold text-[#003399]">
             Porque escolher a gente?
           </h2>
           <p class="font-medium text-[#003399]">
@@ -713,7 +733,7 @@
         <div class="flex w-full space-y-12 flex-col">
           <div class="relative w-full flex flex-col space-y-4">
             <div class="max-w-[50%] max-lg:max-w-full space-y-4">
-              <h2 class="text-4xl font-bold text-[#003399]">Custo Acessível</h2>
+              <h2 class="text-3xl font-bold text-[#003399]">Custo Acessível</h2>
               <p class="text-justify">
                 Oferecemos conhecimento de alta qualidade por um preço que cabe
                 no seu bolso. Sabemos que educação é um investimento e, por
@@ -741,7 +761,7 @@
             <div
               class="max-w-[50%] max-lg:max-w-full space-y-4 ml-auto lg:text-end"
             >
-              <h2 class="text-4xl font-bold text-[#003399]">
+              <h2 class="text-3xl font-bold text-[#003399]">
                 Garantia de Aprendizado
               </h2>
               <p class="text-justify">
@@ -769,7 +789,7 @@
 
           <div class="relative w-full flex flex-col space-y-4 pb-2">
             <div class="max-w-[50%] max-lg:max-w-full space-y-4">
-              <h2 class="text-4xl font-bold text-[#003399]">
+              <h2 class="text-3xl font-bold text-[#003399]">
                 Plataforma Gamificada
               </h2>
               <p class="text-justify">
@@ -799,7 +819,7 @@
             <div
               class="max-w-[50%] max-lg:max-w-full space-y-4 ml-auto lg:text-end"
             >
-              <h2 class="text-4xl font-bold text-[#003399]">
+              <h2 class="text-3xl font-bold text-[#003399]">
                 Continuidade no Aprendizado
               </h2>
               <p class="text-justify">
@@ -821,7 +841,7 @@
     >
       <div class="container w-full flex flex-col space-y-10">
         <div class="flex flex-col space-y-2">
-          <h2 class="text-2xl font-extrabold">Sobre nós</h2>
+          <h2 class="text-3xl font-extrabold">Sobre nós</h2>
           <p class="font-medium text-white">
             Conheça um pouco sobre nossa escola
           </p>
@@ -930,14 +950,14 @@
     >
       <div class="container w-full flex flex-col space-y-10">
         <div class="flex flex-col space-y-2">
-          <h2 class="text-2xl font-extrabold">
+          <h2 class="text-3xl font-extrabold">
             Empresas que já contam com a gente
           </h2>
         </div>
         <div
           class="grid grid-cols-1 lg:grid-cols-3 gap-10 items-center justify-center"
         >
-          <img loading="lazy" src="/indiodev.png" class="mx-auto" />
+          <img loading="lazy" src="/maiyu.png" class="mx-auto" />
           <img loading="lazy" src="/cetam.png" class="mx-auto" />
           <img loading="lazy" src="/sebrae.png" class="mx-auto" />
         </div>
@@ -950,7 +970,7 @@
     >
       <div class="container w-full flex flex-col space-y-10">
         <div class="flex flex-col space-y-2">
-          <h2 class="text-2xl font-extrabold">Contato</h2>
+          <h2 class="text-3xl font-extrabold">Contato</h2>
           <p class="font-medium">
             Entre em contato conosco para mais informações
           </p>
@@ -1052,7 +1072,7 @@
           <span class="opacity-30">
             Desenvolvido por
             <a href="https://indio.dev.br" target="_blank">
-              <strong>Indio Development</strong>
+              <strong>Maiyu</strong>
             </a>
           </span>
         </div>
