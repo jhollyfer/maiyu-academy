@@ -5,22 +5,46 @@
     <link rel="icon" type="image/png" href="/favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="assests/index.css" />
     <link href="https://fonts.cdnfonts.com/css/amazon-ember" rel="stylesheet" />
+
     <link
       href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css"
       rel="stylesheet"
     />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://unpkg.com/lucide@latest"></script>
+
     <script
       defer
       src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
     ></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <style type="text/tailwindcss">
+      @layer base {
+        body {
+          font-family: "Amazon Ember ", sans-serif;
+        }
+      }
+
+      @layer utilities {
+        @keyframes infinite-scroll {
+          from {
+            transform: translateX(0);
+          }
+          to {
+            transform: translateX(-75%);
+          }
+        }
+
+        .animation-infinite-scroll {
+          animation: infinite-scroll 30s linear infinite;
+        }
+      }
+    </style>
 
     <title>Jedais Tec</title>
   </head>
-  <body class="relative overflow-x-hidden">
+  <body class="relative">
     <section
       id="loading"
       class="w-full flex flex-col gap-10 justify-center items-center p-8 bg-[#003399] fixed top-0 left-0 right-0 h-screen z-50"
@@ -251,18 +275,18 @@
     </main>
 
     <section
-      class="inline-flex w-auto overflow-x-auto whitespace-nowrap"
+      class="inline-flex w-full overflow-x-hidden whitespace-nowrap"
       x-data="{}"
       x-init="$nextTick(() => {
-        let ul = $refs.horizontal-gallery;
-        ul.insertAdjacentHTML('afterend', ul.outerHTML);
-        ul.nextSibling.setAttribute('aria-hidden', 'true');
-    })"
+      let ul = $refs.horizontal-gallery;
+      ul.insertAdjacentHTML('afterend', ul.outerHTML);
+      ul.nextSibling.setAttribute('aria-hidden', 'true');
+  })"
     >
       <ul
         x-ref="horizontal-gallery"
         id="horizontal-gallery"
-        class="w-full inline-flex animation-infinite-scroll gap-1"
+        class="w-auto inline-flex animation-infinite-scroll gap-1"
       ></ul>
     </section>
 

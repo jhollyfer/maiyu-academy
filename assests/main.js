@@ -40,8 +40,6 @@ document.addEventListener("DOMContentLoaded", function () {
   };
 
   window.addEventListener("scroll", onChangeHeaderBackground);
-
-  populateGallery();
 });
 
 const bar_progress = document.getElementById("bar-progress");
@@ -64,4 +62,6 @@ window.addEventListener("load", function () {
     clearInterval(simulateProgress);
     loading.classList.add("hidden");
   }, 2000);
+
+  populateGallery();
 });
