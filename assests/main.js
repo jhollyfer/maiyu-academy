@@ -1,5 +1,12 @@
 lucide.createIcons();
 
+const sr = ScrollReveal({
+  origin: "top",
+  distance: "80px",
+  duration: 2000,
+  reset: true,
+});
+
 function populateGallery() {
   const MAX_GALLERY = 47;
   const gallery = document.getElementById("horizontal-gallery");
@@ -33,7 +40,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const onChangeHeaderBackground = function () {
     const bounds = home.getBoundingClientRect();
-    console.log(bounds);
 
     if (bounds.top <= -10) header.classList.add("bg-[#003399]");
     else header.classList.remove("bg-[#003399]");
@@ -64,4 +70,19 @@ window.addEventListener("load", function () {
   }, 2000);
 
   populateGallery();
+  Reveal([...document.querySelectorAll(".hero-card")]);
+  Reveal([...document.querySelectorAll(".methodology")]);
 });
+
+/**
+ *
+ * @param {Element[]} elements
+ */
+
+function Reveal(elements) {
+  for (let index = 0; index < elements.length; index++) {
+    sr.reveal(elements[index], {
+      delay: (index + 1) * 350,
+    });
+  }
+}

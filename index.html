@@ -2,8 +2,8 @@
 <html lang="pt-br" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/png" href="/favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
 
     <link href="https://fonts.cdnfonts.com/css/amazon-ember" rel="stylesheet" />
 
@@ -18,6 +18,7 @@
     ></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
 
     <style type="text/tailwindcss">
       @layer base {
@@ -89,7 +90,7 @@
           <!-- drawer component -->
           <div
             id="drawer-right"
-            class="fixed top-0 right-0 z-40 h-screen p-10 overflow-y-auto transition-transform translate-x-full bg-white w-full sm:w-96 space-y-8"
+            class="fixed top-0 right-0 z-40 h-screen p-8 overflow-y-auto transition-transform translate-x-full bg-white w-full sm:w-96 space-y-8"
             tabindex="-1"
             aria-labelledby="drawer-right-label"
           >
@@ -224,7 +225,7 @@
         </div>
         <div class="container grid grid-cols-1 xl:grid-cols-3 gap-4">
           <div
-            class="bg-black/80 border-[#fffafa]/20 p-6 rounded-lg shadow w-full space-y-4"
+            class="bg-black/80 border-[#fffafa]/20 p-6 rounded-lg shadow w-full space-y-4 hero-card"
           >
             <i data-lucide="Gamepad-2" class="w-10 h-10 text-red-600"></i>
             <div class="w-full space-y-3">
@@ -240,7 +241,7 @@
           </div>
 
           <div
-            class="bg-black/80 border-[#fffafa]/20 p-6 rounded-lg shadow w-full space-y-4"
+            class="bg-black/80 border-[#fffafa]/20 p-6 rounded-lg shadow w-full space-y-4 hero-card"
           >
             <i data-lucide="Waypoints" class="w-10 h-10 text-blue-600"></i>
             <div class="w-full space-y-3">
@@ -256,7 +257,7 @@
           </div>
 
           <div
-            class="bg-black/80 border-[#fffafa]/20 p-6 rounded-lg shadow w-full space-y-4"
+            class="bg-black/80 border-[#fffafa]/20 p-6 rounded-lg shadow w-full space-y-4 hero-card"
           >
             <i data-lucide="Brain" class="w-10 h-10 text-green-600"></i>
             <div class="w-full space-y-3">
@@ -278,13 +279,13 @@
       class="inline-flex w-full overflow-x-hidden whitespace-nowrap"
       x-data="{}"
       x-init="$nextTick(() => {
-      let ul = $refs.horizontal-gallery;
+      let ul = $refs.horizontal_gallery;
       ul.insertAdjacentHTML('afterend', ul.outerHTML);
       ul.nextSibling.setAttribute('aria-hidden', 'true');
   })"
     >
       <ul
-        x-ref="horizontal-gallery"
+        x-ref="horizontal_gallery"
         id="horizontal-gallery"
         class="w-auto inline-flex animation-infinite-scroll gap-1"
       ></ul>
@@ -680,9 +681,12 @@
             Aprendizado otimizado com a metodologia jedais
           </p>
         </div>
-        <div class="grid grid-cols-1 xl:grid-cols-3 gap-4">
+        <div
+          data-anijs="if: scroll, on: window, do: bounceInLeft animated, before: scrollReveal"
+          class="grid grid-cols-1 xl:grid-cols-3 gap-4"
+        >
           <div
-            class="bg-[#F0F0F0] p-6 rounded-lg shadow w-full space-y-4 h-full"
+            class="bg-[#F0F0F0] p-6 rounded-lg shadow w-full space-y-4 h-full methodology"
           >
             <div>
               <span
@@ -709,7 +713,7 @@
           </div>
 
           <div
-            class="bg-[#F0F0F0] p-6 rounded-lg shadow w-full space-y-4 h-full"
+            class="bg-[#F0F0F0] p-6 rounded-lg shadow w-full space-y-4 h-full methodology"
           >
             <div>
               <span
@@ -737,7 +741,7 @@
           </div>
 
           <div
-            class="bg-[#F0F0F0] p-6 rounded-lg shadow w-full space-y-4 h-full"
+            class="bg-[#F0F0F0] p-6 rounded-lg shadow w-full space-y-4 h-full methodology"
           >
             <div>
               <span
