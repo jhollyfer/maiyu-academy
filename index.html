@@ -50,7 +50,9 @@
       id="loading"
       class="w-full flex flex-col gap-10 justify-center items-center p-8 bg-[#003399] fixed top-0 left-0 right-0 h-screen z-50"
     >
-      <img src="/logo-light.png" alt="Logo Jedais Tec" class="w-40 h-10" />
+      <!-- <img src="/logo-light.png" alt="Logo Jedais Tec" class="w-40 h-10" /> -->
+      <img src="/logo.png" alt="Logo Jedais Tec" class="w-40 h-40" />
+
       <div class="container w-full flex flex-col space-y-10 max-w-sm">
         <div
           id="bar-progress"
@@ -71,7 +73,8 @@
         <nav
           class="container w-full flex justify-between items-center px-8 sm:p-0"
         >
-          <img src="/logo-light.png" alt="Logo Jedais Tec" class="w-40 h-10" />
+          <!-- <img src="/logo-light.png" alt="Logo Jedais Tec" class="w-40 h-10" /> -->
+          <img src="/logo.png" alt="Logo Jedais Tec" class="w-20 h-20" />
 
           <!-- drawer init and toggle -->
           <div class="text-center">
@@ -95,11 +98,13 @@
             aria-labelledby="drawer-right-label"
           >
             <div class="inline-flex items-center w-full justify-between">
-              <img
+              <!-- <img
                 src="/logo-dark.png"
                 alt="Logo Jedais Tec"
                 class="w-40 h-10"
-              />
+              /> -->
+              <img src="/logo.png" alt="Logo Jedais Tec" class="w-20 h-20" />
+
               <button
                 type="button"
                 data-drawer-hide="drawer-right"
@@ -274,22 +279,6 @@
         </div>
       </section>
     </main>
-
-    <section
-      class="inline-flex w-full overflow-x-hidden whitespace-nowrap"
-      x-data="{}"
-      x-init="$nextTick(() => {
-      let ul = $refs.horizontal_gallery;
-      ul.insertAdjacentHTML('afterend', ul.outerHTML);
-      ul.nextSibling.setAttribute('aria-hidden', 'true');
-  })"
-    >
-      <ul
-        x-ref="horizontal_gallery"
-        id="horizontal-gallery"
-        class="w-auto inline-flex animation-infinite-scroll gap-1"
-      ></ul>
-    </section>
 
     <section
       id="courses"
@@ -955,10 +944,7 @@
                   Missão
                 </h5>
                 <p class="font-normal text-[#fffafa] text-justify">
-                  A missão da Jedais Tec é capacitar crianças e jovens dos
-                  interiores do Amazonas, para o futuro da tecnologia,
-                  dando-lhes as habilidades que precisam para explorar e criar
-                  no mundo digital.
+                  Democratizar o ensino de informática no Brasil e no mundo!
                 </p>
               </div>
             </div>
@@ -1005,15 +991,17 @@
       <div class="container w-full flex flex-col space-y-10">
         <div class="flex flex-col space-y-2">
           <h2 class="text-3xl font-extrabold">
-            Empresas que já contam com a gente
+            Empresas e organizações que já contam com a gente
           </h2>
         </div>
         <div
-          class="grid grid-cols-1 lg:grid-cols-3 gap-10 items-center justify-center"
+          class="grid grid-cols-2 lg:grid-cols-3 gap-10 items-center justify-center py-10"
         >
           <img loading="lazy" src="/maiyu.png" class="mx-auto" />
-          <img loading="lazy" src="/cetam.png" class="mx-auto" />
           <img loading="lazy" src="/sebrae.png" class="mx-auto" />
+          <img loading="lazy" src="/cetam.png" class="mx-auto" />
+          <img loading="lazy" src="/semfel.png" class="mx-auto" />
+          <img loading="lazy" src="/pmbc.png" class="mx-auto" />
         </div>
       </div>
     </section>
@@ -1107,7 +1095,8 @@
     >
       <div class="container w-full text-white flex flex-col gap-10">
         <div class="flex flex-row w-full justify-between">
-          <img src="/logo-light.png" alt="Logo Jedais Tec" class="w-40 h-10" />
+          <!-- <img src="/logo-light.png" alt="Logo Jedais Tec" class="w-40 h-10" /> -->
+          <img src="/logo.png" alt="Logo Jedais Tec" class="w-40 h-40" />
 
           <div class="flex flex-col">
             <ul class="flex flex-col gap-2">
